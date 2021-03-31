@@ -16,6 +16,10 @@ public class QuizManager : MonoBehaviour
     public Text QuestionTxt;
     public Text ScoreTxt;
 
+    //modification
+    public Text TotalQ;
+
+
     int totalQuestions = 0;
     public int score;
 
@@ -35,7 +39,9 @@ public class QuizManager : MonoBehaviour
     {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
-        ScoreTxt.text = score + "/" + totalQuestions;
+        // ScoreTxt.text = score + "/" + totalQuestions;
+        ScoreTxt.text = score.ToString();
+        TotalQ.text = totalQuestions.ToString();
     }
 
     public void correct()
