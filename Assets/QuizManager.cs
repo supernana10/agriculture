@@ -69,7 +69,7 @@ public class QuizManager : MonoBehaviour
         {
             // options[i].GetComponent<Image>().color = options[i].GetComponent<AnswerScript>().startColor;
             options[i].GetComponent<AnswerScript>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
+            options[i].GetComponentInChildren<Text>().text = QnA[currentQuestion].Answers[i];
             
             if(QnA[currentQuestion].CorrectAnswer == i+1)
             {

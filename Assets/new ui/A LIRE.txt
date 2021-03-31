@@ -1,0 +1,8 @@
+j'ai changé quelques syntaxe dans ton scripts """QuizManager"""
+mais ca ne change rien ton projet.
+
+changement 1: 
+ligne 39-40
+
+changement 2: 
+ligne 76-80
